@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#9FA7A7"
+    android:layout_height="match_parent"
+    tools:context=".Slider.SliderActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/vpager"
+        android:layout_height="200dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/dots_layout"
+        android:gravity="center"
+        android:layout_marginTop="210dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/btntest"
+            android:text="Test"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="250dp"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+</ScrollView>

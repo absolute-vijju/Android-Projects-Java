@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name" translatable="false">BookMyDoctor</string>
+
+    <string-array name="Registration_Doctor">
+
+        <item>Doctor</item>
+        <item>Patient</item>
+
+    </string-array>
+    <string-array name="Registration_Patient">
+
+        <item>Patient</item>
+        <item>Doctor</item>
+
+    </string-array>
+
+    <string-array name="doc_speciality">
+        <item>Select Speciality</item>
+        <item>llergy and Immunology</item>
+        <item>Cardiology(Disease)</item>
+        <item>Child and Adolescent Psychiatry</item>
+        <item>Anesthesiology</item>
+    </string-array>
+
+    <string-array name="doc_degrees">
+        <item>Select Degree</item>
+        <item>MBBS – Bachelor of Medicine, Bachelor of Surgery</item>
+        <item>BDS – Bachelor of Dental Surgery</item>
+        <item>BAMS – Bachelor of Ayurvedic Medicine and Surgery</item>
+        <item>BUMS – Bachelor of Unani Medicine and Surgery</item>
+        <item>BHMS – Bachelor of Homeopathy Medicine and Surgery</item>
+    </string-array>
+
+    <string-array name="doc_timing">
+        <item>Pick Your Time</item>
+        <item>12:00 PM</item>
+        <item>12:30 PM</item>
+        <item>1:00 PM</item>
+        <item>1:30 PM</item>
+        <item>2:00 PM</item>
+        <item>2:30 PM</item>
+        <item>3:00 PM</item>
+        <item>3:30 PM</item>
+        <item>4:00 PM</item>
+        <item>4:30 PM</item>
+        <item>5:00 PM</item>
+        <item>5:30 PM</item>
+        <item>6:00 PM</item>
+        <item>6:30 PM</item>
+    </string-array>
+
+    <string name="slide1_title" translatable="false">Registraion and Login</string>
+    <string name="slide1_desc" translatable="false">Doctors and Patient can create an account and login with their account.</string>
+
+    <string name="slide2_title" translatable="false">Speciality and Rating</string>
+    <string name="slide2_desc" translatable="false">Patients can see the speciality of the Doctor and also provide and view rating.</string>
+
+    <string name="slide3_title" translatable="false">Book Appointment</string>
+    <string name="slide3_desc" translatable="false">Patients can search doctors with their speciality or name and book an appointment.</string>
+
+    <string name="slide4_title" translatable="false">Find From Anywhere</string>
+    <string name="slide4_desc" translatable="false">Patient can find their clinics using map.</string>
+
+</resources>

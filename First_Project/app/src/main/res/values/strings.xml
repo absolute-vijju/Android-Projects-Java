@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">First_Project</string>
+    <string name="create_account">"Don't have an account? <u>Sign Up </u> "</string>
+    <string name="already_account">"Already have an account? <u>Log In</u> "</string>
+</resources>

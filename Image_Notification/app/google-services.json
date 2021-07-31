@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "851659342040",
+    "firebase_url": "https://imagenotification-e0a36.firebaseio.com",
+    "project_id": "imagenotification-e0a36",
+    "storage_bucket": "imagenotification-e0a36.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851659342040:android:f447d4a17826e3b4",
+        "android_client_info": {
+          "package_name": "com.example.image_notification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851659342040-7t7p9ue1kda1lphsnjl70i4pmngackvn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.image_notification",
+            "certificate_hash": "20b4c9beea86a26279d3d71655c3fb0148a42ea1"
+          }
+        },
+        {
+          "client_id": "851659342040-aaj654p4japlhk6uvtl6ga29tul5c282.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAqN12QHA6WqhRN-KHTD8rSjVxhUzYvwg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851659342040-aaj654p4japlhk6uvtl6ga29tul5c282.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

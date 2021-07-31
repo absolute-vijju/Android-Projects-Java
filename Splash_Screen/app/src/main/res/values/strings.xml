@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Splash_Screen</string>
+
+    <string name="slid1_title">Bike Washing</string>
+    <string name="slide1_des">Book your appointment and wash your two wheeler</string>
+
+    <string name="slid2_title">Car Washing</string>
+    <string name="slide2_des">Book your appointment and wash your four wheeler</string>
+
+    <string name="slid3_title">Find from Anywhere</string>
+    <string name="slide3_des">Find your nearest vehicle washing shop using map</string>
+
+</resources>

@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GeocodingActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:id="@+id/addressTV"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressET"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/addressTV"
+        android:singleLine="true"
+        android:text="1600 Pennsylvania Ave NW Washington DC 20502"
+        android:layout_toRightOf="@+id/addressTV" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Lat/Long"
+        android:id="@+id/addressButton"
+        android:layout_margin="50dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/latLongTV"
+        android:textColor="#a65050"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

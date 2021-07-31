@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@mipmap/logo"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Fullname : "
+            android:textColor="@color/text"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/fullname"
+            android:textColor="@color/text"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/etgender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fullname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Gender : "
+            android:textColor="@color/text"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fullname"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/etgender"
+            android:textColor="@color/text"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gender"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Languages Known : "
+            android:textColor="@color/text"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/languages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gender"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/lang"
+            android:textColor="@color/text"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lang"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Email : "
+            android:textColor="@color/text"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/remail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lang"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/email"
+            android:textColor="@color/text"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/remail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnlogin"
+            android:background="@drawable/button"
+            android:padding="15dp"
+            android:text="Login"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/call"
+        android:checkable="true"
+        android:icon="@drawable/call"
+        android:title="Call"></item>
+    <item
+        android:id="@+id/bluetooth"
+        android:checkable="true"
+        android:icon="@drawable/bluetooth"
+        android:title="Bluetooth"></item>
+    <item
+        android:id="@+id/wifi"
+        android:checkable="true"
+        android:icon="@drawable/wifi"
+        android:title="Wi-Fi"></item>
+</menu>

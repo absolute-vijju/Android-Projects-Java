@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@mipmap/logo"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etfname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="50"
+                android:background="@drawable/roundet"
+                android:hint="Firstname"
+                android:paddingLeft="5dp"
+                android:textColor="@color/text"
+                android:textColorHint="@color/text"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etlname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="50"
+                android:background="@drawable/roundet"
+                android:hint="Lastname"
+                android:paddingLeft="5dp"
+                android:textColor="@color/text"
+                android:textColorHint="@color/text"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender :"
+                android:textColor="@color/text"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RadioGroup
+                    android:id="@+id/rggender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbmale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Male"
+                        android:textColor="@color/text"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbfemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Female"
+                        android:textColor="@color/text"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbother"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Other"
+                        android:textColor="@color/text"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Languages :"
+                android:textColor="@color/text"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chkeng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="English"
+                    android:textColor="@color/text"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chkhin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hindi"
+                    android:textColor="@color/text"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chkguj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gujarati"
+                    android:textColor="@color/text"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etemail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="50"
+                android:background="@drawable/roundet"
+                android:drawableLeft="@drawable/mail"
+                android:drawablePadding="5dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                android:textColor="@color/text"
+                android:textColorHint="@color/text"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etpasswd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="50"
+                android:background="@drawable/roundet"
+                android:drawableLeft="@drawable/passwd"
+                android:drawablePadding="5dp"
+                android:hint="Password"
+                android:inputType="textWebPassword"
+                android:paddingLeft="5dp"
+                android:textColor="@color/text"
+                android:textColorHint="@color/text"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnsubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="Submit"
+                android:textColor="@color/text"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

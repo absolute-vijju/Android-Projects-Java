@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_slide4">
+
+    <ImageView
+        android:id="@+id/slide4_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/slide4" />
+
+    <TextView
+        android:id="@+id/slide4_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slide4_img"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center_horizontal"
+        android:text="@string/slide4_title"
+        android:textColor="#FFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/slide4_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slide4_title"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="40sp"
+        android:gravity="center_horizontal"
+        android:text="@string/slide4_desc"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>

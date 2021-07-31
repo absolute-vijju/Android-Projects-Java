@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GMAIL</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+</resources>

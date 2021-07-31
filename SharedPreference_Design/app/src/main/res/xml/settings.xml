@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="devicename"
+        android:summary="Configure your device"
+        android:title="Device Name"></EditTextPreference>
+
+    <SwitchPreference
+        android:key="nightmode"
+        android:summary="Enable/Disable Night Mode"
+        android:title="Night Mode"></SwitchPreference>
+
+    <CheckBoxPreference
+        android:key="checkbox"
+        android:summary="Enable/Disable Checkbox"
+        android:title="Checkbox Preference"></CheckBoxPreference>
+
+</PreferenceScreen>

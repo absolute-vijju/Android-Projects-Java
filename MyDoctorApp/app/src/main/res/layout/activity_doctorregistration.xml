@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back_docregistraion"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".Doctor.DoctorRegistration">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="170dp"
+            android:background="@null"
+            android:text="Doctor"
+            android:textAllCaps="false"
+            android:textColor="#FFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/regswitchpatient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="20dp"
+            android:background="@null"
+            android:text="Patient"
+            android:textAllCaps="false"
+            android:textColor="#FFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="110dp"
+                android:layout_weight="8">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#D57EA3"
+                    android:orientation="vertical"
+                    android:rowCount="20"
+                    android:scrollbars="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="5"
+                            android:textColorHint="#FFFFFF"
+                            app:boxStrokeColor="#FF5900"
+                            app:boxStrokeWidth="20dp">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/etdfname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Firstname"
+                                android:textStyle="italic" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="5"
+                            android:textColorHint="#FFFFFF"
+                            app:boxStrokeColor="#FF5900"
+                            app:boxStrokeWidth="20dp">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/etdlname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Lastname"
+                                android:textStyle="italic" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gender"
+                            android:textColor="#FFFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:id="@+id/drg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+
+                            <RadioButton
+                                android:id="@+id/drbmale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Male"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/drbfemale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Female"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/drbother"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Other"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Address"
+                            android:textColor="#FFFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/etcliaddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/home"
+                            android:drawablePadding="10dp"
+                            android:hint="Enter Your Clinic Address . . ."
+                            android:textColorHint="#000"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date of Birth"
+                            android:textColor="#FFFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btnddob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:background="@null"
+                            android:drawableLeft="@drawable/calender"
+                            android:drawablePadding="10dp"
+                            android:text="Select Date"
+                            android:textAlignment="textStart"
+                            android:textAllCaps="false"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phone"
+                            android:textColor="#FFFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/etdphone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/contact"
+                            android:drawablePadding="10dp"
+                            android:hint="Enter Your Number . . . "
+                            android:inputType="number"
+                            android:textColorHint="#000"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Speciality Type"
+                            android:textColor="#FFFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/dspspeciality"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:entries="@array/doc_speciality"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textStyle="bold"></Spinner>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Degree"
+                            android:textColor="#FFFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/dspdegree"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:entries="@array/doc_degrees"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textStyle="bold"></Spinner>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/detusername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:drawableLeft="@drawable/email"
+                            android:drawablePadding="10dp"
+                            android:hint="Enter Username"
+                            android:inputType="textEmailAddress"
+                            android:padding="10dp"
+                            android:textColorHint="#FFF"
+                            android:textStyle="italic" />
+
+                        <EditText
+                            android:id="@+id/detpassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:drawableLeft="@drawable/lock"
+                            android:drawablePadding="10dp"
+                            android:hint="Create Password"
+                            android:inputType="textWebPassword"
+                            android:padding="10dp"
+                            android:textColorHint="#FFF"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/dbtnsave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/back_docbutton"
+                            android:text="Submit"
+                            android:textAllCaps="false"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </GridLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

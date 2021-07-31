@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FlagApp</string>
+    <string name="country_name">Country :</string>
+    <string name="country_capital">Capital :</string>
+</resources>

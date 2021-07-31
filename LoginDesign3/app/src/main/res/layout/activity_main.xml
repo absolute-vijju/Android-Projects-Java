@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/back2" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dc5f695f"></View>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:padding="50dp"
+        android:src="@mipmap/logo" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/mail"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#2eed71"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/passwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:inputType="textWebPassword"
+        android:textColorHint="#2eed71"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/button_sign_register"
+        android:padding="15dp"
+        android:text="Sign In"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="19dp"
+        android:background="@drawable/button_sign_register"
+        android:padding="15dp"
+        android:text="Register"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/button_or"
+        android:padding="15dp"
+        android:text="OR"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</FrameLayout>

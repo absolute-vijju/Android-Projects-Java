@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Listview_Static</string>
+
+    <string-array name="names">
+        <item>Vijay</item>
+        <item>Hardik</item>
+        <item>Komal</item>
+        <item>Vraj</item>
+        <item>Mehul</item>
+        <item>Sumit</item>
+        <item>Dharmik</item>
+        <item>Rohan</item>
+        <item>Om</item>
+    </string-array>
+</resources>

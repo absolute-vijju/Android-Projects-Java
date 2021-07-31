@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mydoctorapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/myic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/myic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Patient.ApprovedAppointment"
+            android:parentActivityName=".Patient.Dashboardpatient"
+            android:screenOrientation="portrait"
+            android:theme="@style/ApprovedAppointmentTheme"></activity>
+        <activity
+            android:name=".Doctor.PendingAppointment"
+            android:parentActivityName=".Doctor.Dashboarddoctor"
+            android:screenOrientation="portrait"
+            android:theme="@style/PendingAppointmentTheme" />
+        <activity
+            android:name=".Doctor.SetTimeForDoctor"
+            android:parentActivityName=".Doctor.Dashboarddoctor"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeForTiming" />
+        <activity
+            android:name=".Doctor.Dashboarddoctor"
+            android:screenOrientation="portrait"
+            android:theme="@style/DashboarddoctorTheme" />
+        <activity
+            android:name=".Patient.SpecificDoctor"
+            android:parentActivityName=".Patient.DoctordetailsForPatient"
+            android:screenOrientation="portrait"
+            android:theme="@style/SpecificDoctorTheme" />
+        <activity
+            android:name=".Patient.DoctordetailsForPatient"
+            android:parentActivityName=".Patient.Dashboardpatient"
+            android:screenOrientation="portrait"
+            android:theme="@style/DoctordetailsForPatientTheme" />
+        <activity
+            android:name=".Patient.Dashboardpatient"
+            android:screenOrientation="portrait"
+            android:theme="@style/PatientDashboardTheme" />
+        <activity
+            android:name=".Patient.PatientloginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PatientRegistrationTheme"></activity>
+        <activity
+            android:name=".Doctor.DoctorloginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DoctorRegistrationTheme"></activity>
+        <activity
+            android:name=".SliderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"></activity>
+        <activity
+            android:name=".Patient.PatientRegistration"
+            android:screenOrientation="portrait"
+            android:theme="@style/PatientRegistrationTheme" />
+        <activity
+            android:name=".Doctor.DoctorRegistration"
+            android:screenOrientation="portrait"
+            android:theme="@style/DoctorRegistrationTheme" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Pulldown_Refresh</string>
+
+    <string-array name="fruits_names">
+
+        <item>Apples</item>
+        <item>Bananas</item>
+        <item>Cherries</item>
+        <item>Mango</item>
+        <item>Orange</item>
+
+    </string-array>
+
+    <string-array name="bird_names">
+
+        <item>Crow</item>
+        <item>Peacock</item>
+        <item>Sparrow</item>
+        <item>Parrot</item>
+        <item>Pigeon</item>
+
+    </string-array>
+
+    <string-array name="animal_names">
+
+        <item>Lion</item>
+        <item>Dog</item>
+        <item>Rino</item>
+        <item>Tiger</item>
+        <item>Hippopotamus</item>
+
+    </string-array>
+
+    <string-array name="vegetable_names">
+
+        <item>Broccoli</item>
+        <item>Corn</item>
+        <item>Cucumber</item>
+        <item>Pumpkin</item>
+        <item>Tomato</item>
+
+    </string-array>
+
+    <string-array name="sweets_names">
+
+        <item>Ladoos</item>
+        <item>Jalebi</item>
+        <item>Kheer</item>
+        <item>Rabdi</item>
+        <item>Peda</item>
+
+    </string-array>
+
+</resources>

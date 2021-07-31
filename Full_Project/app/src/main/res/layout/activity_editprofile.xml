@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_Profile.EditprofileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/ep_imview"
+                android:scaleType="fitCenter"
+                android:background="#817F7F"
+                android:src="@drawable/ic_launcher_foreground"
+                android:layout_height="150dp"/>
+
+            <Button
+                android:id="@+id/ep_btn_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="click here to change your image"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/ep_et_id"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:layout_margin="10dp"
+                android:hint="id" />
+
+
+            <EditText
+                android:id="@+id/ep_et_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:layout_margin="10dp"
+                android:hint="firstname" />
+
+            <EditText
+                android:id="@+id/ep_et_lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:focusable="false"
+                android:hint="lastname" />
+
+            <Button
+                android:id="@+id/ep_btnsave_peofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Save Profile"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
